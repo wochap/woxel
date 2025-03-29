@@ -1,5 +1,0 @@
--I${QT_PATH}/include
--I${QT_PATH}/include/QtWidgets
--I${QT_PATH}/include/QtCore
--I${QT_PATH}/include/QtGui
--F=${QT_PATH}/lib

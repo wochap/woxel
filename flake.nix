@@ -25,6 +25,8 @@
             qt6.full
             qtcreator
           ];
+
+          QT_PATH = "${pkgs.qt6.full}";
         };
       });
 }
