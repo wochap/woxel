@@ -1,0 +1,49 @@
+# Build artifacts
+build/
+Build/
+CMakeCache.txt
+CMakeFiles/
+*.cmake
+CMakeLists.txt.user
+
+# Executables
+HelloWorld
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE files
+.idea/
+.vscode/
+*.user
+
+# Editor temp files
+*~
+*.swp
+*.swo
+
+# Dependency directories
+.deps/
+.libs/
+
+# macOS
+.DS_Store
+
+# Qt autogen files
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# Compiled object files
+*.o
+*.obj
+
+# Qt generated files
+Makefile
+*_plugin_import.cpp
+*.qmake.stash
+.qmake.stash
+
+# Debug files
+*.debug
