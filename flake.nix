@@ -12,10 +12,18 @@
       let pkgs = nixpkgs.legacyPackages.${system};
       in {
         devShells.default = pkgs.mkShell {
-          packages = [
+          packages = with pkgs; [
+            cmake
+            gcc
+            pkg-config
+            # Provides qmake, linguist, etc., might be needed by cmake find_package(Qt6)
+            kdePackages.qttools
+            # Crucial for making Qt apps find plugins/themes
+            kdePackages.wrapQtAppsHook
+
             # qt6 development tools
-            pkgs.qt6.full
-            pkgs.qtcreator
+            qt6.full
+            qtcreator
           ];
         };
       });
