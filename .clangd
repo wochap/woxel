@@ -1,0 +1,7 @@
+CompileFlags:
+  Add: 
+    - "-I${env:QT_PATH}/include"
+    - "-I${env:QT_PATH}/include/QtWidgets"
+    - "-I${env:QT_PATH}/include/QtCore"
+    - "-I${env:QT_PATH}/include/QtGui"
+    - "-F=${env:QT_PATH}/lib"
